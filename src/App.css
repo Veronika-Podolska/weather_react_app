@@ -1,12 +1,12 @@
 .App {
   max-width: 1000px;
-  margin: 80px auto;
+  margin: 60px auto;
 }
 .App img {
   max-width: 200px;
 }
-.App span {
-  font-size: 70px;
+.App .temperature-degree {
+  font-size: 90px;
 }
 .App .celsius-link {
   font-size: 16px;
@@ -14,4 +14,24 @@
 .App .container {
   display: flex;
   justify-content: space-evenly;
+}
+.App ul {
+  margin: 0px;
+  padding: 0px;
+}
+.App li {
+  list-style: none;
+  padding: 40px 20px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.App .weather-info {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 40px;
+}
+.App form {
+  margin-bottom: 40px;
 }
