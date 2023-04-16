@@ -1,0 +1,17 @@
+.App {
+  max-width: 1000px;
+  margin: 80px auto;
+}
+.App img {
+  max-width: 200px;
+}
+.App span {
+  font-size: 70px;
+}
+.App .celsius-link {
+  font-size: 16px;
+}
+.App .container {
+  display: flex;
+  justify-content: space-evenly;
+}
