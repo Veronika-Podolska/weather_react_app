@@ -1,6 +1,12 @@
 .App {
   max-width: 1000px;
   margin: 60px auto;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
 }
 .App img {
   max-width: 200px;
@@ -24,12 +30,14 @@
   padding: 30px 40px;
   margin: 10px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #d7cdff;
   border-radius: 30px;
+  background-color: #d7cdff;
+  color: #332e55;
 }
 .App .weather-info {
-  border: 1px solid black;
-  border-radius: 50px;
+  border: 1px solid transparent;
+
   padding: 40px;
 }
 .App form {

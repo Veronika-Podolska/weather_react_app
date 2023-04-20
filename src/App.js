@@ -35,7 +35,7 @@ export default function App() {
           <div className="col">
             <h1>{weatherInfo.city}</h1>
             <h2>{weatherInfo.date}</h2>
-            <h3>{weatherInfo.description}</h3>
+            <h3 className="text-capitalize">{weatherInfo.description}</h3>
             <div>
               <span className="temperature-degree">
                 {Math.round(weatherInfo.temperature)}
