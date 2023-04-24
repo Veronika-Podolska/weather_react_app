@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
+import Date from "./Date";
 
 export default function App() {
   const [ready, setReady] = useState(false);
@@ -8,7 +9,6 @@ export default function App() {
   const [weatherInfo, setWeatherInfo] = useState({});
 
   function displayWeather(response) {
-    console.log(response);
     setReady(true);
 
     setWeatherInfo({
@@ -19,7 +19,7 @@ export default function App() {
       feelsLike: response.data.temperature.feels_like,
       description: response.data.condition.description,
       icon: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png",
-      date: "Tuesaday 15:31",
+      date: new Date(response.data.time * 1000),
       city: response.data.city,
     });
   }
@@ -34,7 +34,7 @@ export default function App() {
         <div className="row">
           <div className="col">
             <h1>{weatherInfo.city}</h1>
-            <h2>{weatherInfo.date}</h2>
+            <Date date={weatherInfo.date} />
             <h3 className="text-capitalize">{weatherInfo.description}</h3>
             <div>
               <span className="temperature-degree">
