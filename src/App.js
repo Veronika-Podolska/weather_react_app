@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
-import Date from "./Date";
+import UpdatedDate from "./UpdatedDate";
 
 export default function App() {
   const [ready, setReady] = useState(false);
@@ -34,7 +34,7 @@ export default function App() {
         <div className="row">
           <div className="col">
             <h1>{weatherInfo.city}</h1>
-            <Date date={weatherInfo.date} />
+            <UpdatedDate date={weatherInfo.date} />
             <h3 className="text-capitalize">{weatherInfo.description}</h3>
             <div>
               <span className="temperature-degree">
