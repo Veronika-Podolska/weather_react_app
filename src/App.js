@@ -11,6 +11,7 @@ export default function App() {
   const [city, setCity] = useState(defaultCity);
 
   function displayWeather(response) {
+    console.log(response.data.condition.icon);
     setReady(true);
     setWeatherInfo({
       temperature: response.data.temperature.current,
@@ -19,7 +20,7 @@ export default function App() {
       pressure: response.data.temperature.pressure,
       feelsLike: response.data.temperature.feels_like,
       description: response.data.condition.description,
-      icon: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png",
+      icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       date: new Date(response.data.time * 1000),
       city: response.data.city,
     });
