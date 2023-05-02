@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import Footer from "./Footer";
 
 export default function App() {
   const defaultCity = "Kyiv";
@@ -54,6 +55,7 @@ export default function App() {
           <button className="btn">search</button>
         </form>
         <WeatherInfo data={weatherInfo} />
+        <Footer />
       </div>
     );
   } else {
