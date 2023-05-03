@@ -56,7 +56,7 @@ export default function App() {
           <button className="btn">search</button>
         </form>
         <WeatherInfo data={weatherInfo} />
-        <WeatherForecast weatherData={weatherInfo} />
+        <WeatherForecast cityName={weatherInfo.city} />
         <Footer />
       </div>
     );
