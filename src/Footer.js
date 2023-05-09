@@ -11,7 +11,6 @@ export default function Footer() {
       >
         GitHub
       </a>
-      <div>Dont mind my shitty CSS for now</div>
     </div>
   );
 }

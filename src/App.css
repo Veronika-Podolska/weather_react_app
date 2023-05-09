@@ -8,6 +8,7 @@
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
   font-family: "Fredoka", sans-serif;
+  padding: 40px 70px;
 }
 .App img {
   max-width: 200px;
@@ -15,32 +16,13 @@
 .App .temperature-degree {
   font-size: 90px;
 }
-.App .celsius-link {
-  font-size: 16px;
-}
-.App .container {
-  display: flex;
-  justify-content: space-evenly;
-}
-.App ul {
-  margin: 0px;
-  padding: 0px;
-}
-.App li {
-  list-style: none;
-  padding: 30px 40px;
-  margin: 10px;
-  text-align: center;
-  border: 1px solid #d7cdff;
-  border-radius: 30px;
-  background-color: #d7cdff;
-  color: #332e55;
-}
-.App .weather-info {
-  border: 1px solid transparent;
 
-  padding: 40px;
-}
 .App form {
   margin-bottom: 40px;
+}
+.App .input-type {
+  border: none;
+}
+.App .btn {
+  padding: 0px;
 }

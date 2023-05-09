@@ -46,14 +46,20 @@ export default function App() {
   if (ready) {
     return (
       <div className="App">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            placeholder="Enter the city"
-            className="form-control"
-            onChange={handleChangeCity}
-          />
-          <button className="btn">search</button>
+        <form onSubmit={handleSubmit} className="form-control">
+          <div className="row">
+            <div className="col-11">
+              <input
+                type="search"
+                placeholder="Enter the city"
+                onChange={handleChangeCity}
+                className="input-type"
+              />
+            </div>
+            <div className="col-1">
+              <button className="btn">📍</button>
+            </div>
+          </div>
         </form>
         <WeatherInfo data={weatherInfo} />
         <WeatherForecast cityName={weatherInfo.city} />

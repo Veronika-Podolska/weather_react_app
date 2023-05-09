@@ -1,0 +1,28 @@
+.weatherInfo {
+  margin-left: 40px;
+}
+.weatherInfo h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.weatherInfo h3 {
+  font-size: 23px;
+  margin-top: 10px;
+}
+.weatherInfo li {
+  margin: 0px 0px 20px 0px;
+  list-style: none;
+  padding: 20px 30px;
+  text-align: center;
+  border: 1px solid #d7cdff;
+  border-radius: 45px;
+  background-color: #d7cdff;
+  color: #332e55;
+}
+.row .weather-info {
+  margin-right: 20px;
+  margin-top: 110px;
+}
+.weatherInfo .weather-degree {
+  margin-top: 30px;
+}
