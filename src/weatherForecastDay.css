@@ -1,4 +1,9 @@
 .weather-forecast-day {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
+  color: #0b1042;
+}
+.weather-forecast-day .min-degree {
+  color: #7d70d4cb;
+  margin-left: 3px;
 }

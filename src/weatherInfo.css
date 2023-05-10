@@ -3,26 +3,27 @@
 }
 .weatherInfo h1 {
   font-size: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: #0b1042;
 }
 .weatherInfo h3 {
   font-size: 23px;
   margin-top: 10px;
+  color: #0b1042;
 }
 .weatherInfo li {
   margin: 0px 0px 20px 0px;
   list-style: none;
   padding: 20px 30px;
   text-align: center;
-  border: 1px solid #d7cdff;
-  border-radius: 45px;
-  background-color: #d7cdff;
-  color: #332e55;
+  color: #0b1042;
 }
-.row .weather-info {
+.weatherInfo .row .weather-info {
   margin-right: 20px;
-  margin-top: 110px;
+  margin-top: 70px;
 }
 .weatherInfo .weather-degree {
-  margin-top: 30px;
+  margin-top: 5px;
+  font-size: 90px;
+  color: #0b1042;
 }

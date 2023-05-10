@@ -1,6 +1,5 @@
 import React from "react";
 import UpdatedDate from "./UpdatedDate";
-import WeatherTemperature from "./WeatherTemperature";
 import "./weatherInfo.css";
 
 export default function WeatherInfo({ data }) {
@@ -12,8 +11,9 @@ export default function WeatherInfo({ data }) {
           <UpdatedDate date={data.date} />
           <h3 className="text-capitalize">{data.description}</h3>
           <div className="weather-degree">
-            <WeatherTemperature celsius={data.temperature} />
-
+            <span className="weather-degree">
+              {Math.round(data.temperature)}{" "}
+            </span>
             <img src={data.icon} alt="sun-icon" />
           </div>
         </div>
