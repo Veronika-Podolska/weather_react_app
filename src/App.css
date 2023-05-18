@@ -24,6 +24,7 @@ body {
 }
 .App .input-type {
   border: none;
+  outline: none;
 }
 .App .btn {
   padding: 0px;

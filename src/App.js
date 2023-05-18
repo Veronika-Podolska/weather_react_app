@@ -58,7 +58,7 @@ export default function App() {
                 />
               </div>
               <div className="col-1">
-                <button className="btn">📍</button>
+                <button className="btn"></button>
               </div>
             </div>
           </form>
